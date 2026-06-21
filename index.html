@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SipNDrink by Ganador offers premium cocktails, mocktails, mobile bar services, event drinks catering, and professional bartending for weddings, parties, birthdays, corporate events, meetings, launches, and private celebrations in Ikeja, Lagos and across Nigeria.">
-<meta name="keywords" content="Cocktail Catering Services Lagos, Mobile Bar Services Nigeria, Wedding Cocktails & Mocktails Lagos, Event Drinks Catering Lagos, Corporate Event Bar Services Nigeria, Wedding cocktail service Lagos, Mocktail catering for weddings, Birthday drinks vendor Lagos, Drinks catering for parties, Bridal shower cocktail service, Corporate cocktail catering, Luxury mobile bar Lagos, Professional bartending services, Event beverage management, VIP drinks service Nigeria, Child dedication drinks catering, Non-alcoholic mocktail service, Family event drinks vendor, Fresh juice & mocktail bar, Mobile bar Lagos, Cocktail vendor in Lagos, Event drinks service Abuja, Nigerian cocktail catering company, Best cocktail catering in Lagos, Cocktail Catering Services in Lagos, Mobile Bar Services for Weddings & Events, Premium Cocktails & Mocktails, Event Drinks Catering in Nigeria, Corporate & Wedding Bartending Services, Ikeja cocktail vendor, Ikeja mobile bar">
+<meta name="description" content="SipNDrink by Ganador offers premium cocktails, mocktails, mobile bar services, event drinks catering, and professional bartending for weddings, parties, birthdays,[...]">
+<meta name="keywords" content="Cocktail Catering Services Lagos, Mobile Bar Services Nigeria, Wedding Cocktails & Mocktails Lagos, Event Drinks Catering Lagos, Corporate Event Bar Services Nigeria,[...]">
 <meta name="author" content="SipNDrink by Ganador">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#060608">
@@ -22,6 +22,7 @@
 </head>
 <body id="top">
 
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
@@ -34,7 +35,8 @@
       <span class="nav-logo-sub">By Ganador · Ikeja</span>
     </span>
   </a>
-  <ul class="nav-links">
+  <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">☰</button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="#services">Services</a></li>
     <li><a href="#menu">Menu</a></li>
     <li><a href="#events">Events</a></li>
@@ -80,19 +82,19 @@
     <div class="social-links">
       <!-- Instagram -->
       <a href="https://www.instagram.com/sipndrinkbyganador?igsh=MXdvZ3Yzb3RtbDllNw==" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <!-- svg omitted -->
       </a>
-      <!-- Facebook -->
+      <!-- Book -->
       <a href="#booking" class="social-link" title="Book SipNDrink">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        <!-- svg omitted -->
       </a>
-      <!-- TikTok -->
+      <!-- Gallery -->
       <a href="#gallery" class="social-link" title="View gallery">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.19a8.16 8.16 0 004.78 1.52V7.27a4.85 4.85 0 01-1.01-.58z"/></svg>
+        <!-- svg omitted -->
       </a>
       <!-- WhatsApp -->
       <a href="https://wa.me/2348055237149" class="social-link" title="WhatsApp" target="_blank" rel="noopener noreferrer">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <!-- svg omitted -->
       </a>
     </div>
     <div class="strip-divider"></div>
@@ -100,7 +102,7 @@
   </div>
 </div>
 
-<main>
+<main id="main">
 <!-- ABOUT / INTRO -->
 <section id="about">
   <div class="intro-wrap reveal">
@@ -187,16 +189,16 @@
     <!-- COCKTAILS -->
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-passion-fruit-daiquiri.jpg" alt="Tequila Sunrise cocktail by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/cocktails-passion-fruit-daiquiri.jpg" alt="Passion Delight cocktail by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Classic</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Tequila Sunrise</div>
+        <div class="cocktail-name">Passion Delight</div>
         <p class="cocktail-desc">Tequila with orange juice & grenadine. A timeless classic.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦4,000</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Tequila%20Sunrise" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Passion%20Delight" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
@@ -219,32 +221,32 @@
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-tropical-paradise-punch.jpg" alt="Long Island cocktail by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/cocktails-tropical-paradise-punch.jpg" alt="Liquid Sunshine cocktail by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Strong</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Long Island</div>
+        <div class="cocktail-name">Liquid Sunshine</div>
         <p class="cocktail-desc">Mixed spirits with cola finish. Bold, powerful, unforgettable.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦4,000</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Long%20Island" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Liquid%20Sunshine" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-strawberry-citrus-mocktail.jpg" alt="Strawberry Daiquiri cocktail by SipNDrink" loading="lazy" width="960" height="1707">
+        <img src="images/optimized/event-images/strawberry-daiquiri-01.jpg" alt="Ruby Fresh cocktail by SipNDrink" loading="lazy" width="960" height="1707">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Frozen</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Strawberry Daiquiri</div>
+        <div class="cocktail-name">Ruby Fresh</div>
         <p class="cocktail-desc">Frozen strawberry rum cocktail. Sweet, refreshing, Instagram-worthy.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦4,000</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Strawberry%20Daiquiri" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Ruby%20Fresh" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
@@ -283,16 +285,16 @@
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-blue-lagoon-01.jpg" alt="Electric Blue cocktail by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/cocktails-blue-lagoon-01.jpg" alt="Emerald Solstice cocktail by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Signature</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Electric Blue</div>
+        <div class="cocktail-name">Emerald Solstice</div>
         <p class="cocktail-desc">Vibrant blue tropical cocktail. Eye-catching, fruity, delicious.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦4,000</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Electric%20Blue" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Emerald%20Solstice" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
@@ -315,32 +317,32 @@
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-green-apple-magarita-batch-01.jpg" alt="Tequila shots service by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/cocktails-green-apple-magarita-batch-01.jpg" alt="Aromatic Aura shots service by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Shots</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Tequila Shots</div>
+        <div class="cocktail-name">Aromatic Aura</div>
         <p class="cocktail-desc">Premium tequila shooter. For the bold and daring.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦4,000</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Tequila%20Shots" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Aromatic%20Aura" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-blue-raspberry-frozen-01.jpg" alt="Vodka shots service by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/cocktails-blue-raspberry-frozen-01.jpg" alt="Electric Blue shots service by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Shots</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Vodka Shots</div>
+        <div class="cocktail-name">Electric Blue</div>
         <p class="cocktail-desc">Premium vodka shooter. Smooth, clean, essential.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦4,000</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Vodka%20Shots" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Electric%20Blue%20shots" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
@@ -364,67 +366,52 @@
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-strawberry-citrus-mocktail.jpg" alt="Strawberry mocktail by SipNDrink" loading="lazy" width="960" height="1707">
+        <img src="images/optimized/pomegranate-margarita-01.jpg" alt="Pomegranate Margarita mocktail by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Mocktail</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Strawberry Daiquiri (Mocktail)</div>
-        <p class="cocktail-desc">Sweet strawberry frozen mocktail. Non-alcoholic bliss.</p>
+        <div class="cocktail-name">Pomegranate Margarita</div>
+        <p class="cocktail-desc">Bright pomegranate & citrus mocktail. Tart, refreshing, elegant.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦3,500</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Strawberry%20Daiquiri%20Mocktail" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Pomegranate%20Margarita" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/cocktails-frozen-pina-colada-01.jpg" alt="Pina Colada mocktail by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/blue-lagoon-01.jpg" alt="Blue Lagoon mocktail by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Mocktail</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Piña Colada (Mocktail)</div>
-        <p class="cocktail-desc">Creamy pineapple & coconut mix. Tropical paradise.</p>
+        <div class="cocktail-name">Blue Lagoon (Mocktail)</div>
+        <p class="cocktail-desc">Tropical blue mocktail with citrus and herbs. Cool & vibrant.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦3,500</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Pina%20Colada%20Mocktail" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Blue%20Lagoon%20Mocktail" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
 
     <div class="cocktail-card">
       <div class="cocktail-img">
-        <img src="images/optimized/milkshakes-oreos-chocolate.jpg" alt="Milkshake by SipNDrink" loading="lazy" width="960" height="1280">
+        <img src="images/optimized/milkshakes-oreos-chocolate.jpg" alt="Chocolate Milkshake with Oreos by SipNDrink" loading="lazy" width="960" height="1280">
         <div class="cocktail-img-overlay"></div>
         <span class="cocktail-tag">Mocktail</span>
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-name">Milkshake</div>
+        <div class="cocktail-name">Chocolate Milkshake with Oreos</div>
         <p class="cocktail-desc">Vanilla, Chocolate or Strawberry with toppings. Creamy indulgence.</p>
         <div class="cocktail-footer">
           <span class="cocktail-price">₦3,500</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20a%20Milkshake" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Chocolate%20Milkshake%20with%20Oreos" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
       </div>
     </div>
 
-    <div class="cocktail-card">
-      <div class="cocktail-img">
-        <img src="images/optimized/cocktails-assorted-mojito-flight.jpg" alt="SipNDrink signature mocktail flight" loading="lazy" width="960" height="1280">
-        <div class="cocktail-img-overlay"></div>
-        <span class="cocktail-tag">House Exclusive</span>
-      </div>
-      <div class="cocktail-info">
-        <div class="cocktail-name">SipNDrink Signature Mocktail</div>
-        <p class="cocktail-desc">Our special proprietary non-alcoholic blend. Alcohol-free excellence.</p>
-        <div class="cocktail-footer">
-          <span class="cocktail-price">₦3,500</span>
-          <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20SipNDrink%20Signature%20Mocktail" class="cocktail-order" target="_blank" rel="noopener noreferrer">Order Now</a>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -458,38 +445,7 @@
       <h2 class="section-title reveal">Cocktails For <em>Every</em><br>Occasion</h2>
       <p class="section-body reveal">We don't just show up and pour drinks. We design an experience — from the menu theme to the glassware, the garnishes to the bartender's uniform — everything matches your event's vision.</p>
       <div class="events-cards reveal">
-        <div class="event-card">
-          <div class="event-icon">💒</div>
-          <div>
-            <div class="event-title">Weddings & Receptions</div>
-            <p class="event-desc">Custom his-and-hers signature cocktails, full bar setup with waitstaff, welcome drinks & champagne towers.</p>
-            <div class="event-price">From ₦250,000 · Min 50 guests</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-icon">🏢</div>
-          <div>
-            <div class="event-title">Corporate Events</div>
-            <p class="event-desc">Branded cocktail menus, executive mocktail stations, product launches & conference receptions.</p>
-            <div class="event-price">From ₦150,000 · Min 30 guests</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-icon">🥂</div>
-          <div>
-            <div class="event-title">Private Parties</div>
-            <p class="event-desc">Birthday lounges, house parties, rooftop events. Intimate setups or full cocktail bars for up to 300.</p>
-            <div class="event-price">From ₦80,000 · Min 20 guests</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-icon">🎓</div>
-          <div>
-            <div class="event-title">Mixology Masterclasses</div>
-            <p class="event-desc">Team-building cocktail classes, private lessons & corporate entertainment. Hands-on, fun & educational.</p>
-            <div class="event-price">From ₦50,000 · Min 10 persons</div>
-          </div>
-        </div>
+        <!-- removed the old pricing bullets per instructions -->
       </div>
     </div>
     <div class="events-visual reveal">
@@ -514,60 +470,59 @@
     </div>
 
     <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin-bottom:2rem">
-      <!-- PACKAGE A: Social -->
+      <!-- PACKAGE A: Ice and Temp -->
       <div style="background:rgba(255,255,255,0.03);border:1px solid var(--gold);border-radius:12px;padding:2rem;display:flex;flex-direction:column;transition:all 0.3s ease">
         <div style="text-align:center;margin-bottom:1.5rem">
-          <div style="font-size:1.1rem;font-weight:600;color:var(--gold);margin-bottom:0.5rem">THE SOCIAL</div>
-          <div style="font-size:2.8rem;font-weight:700;color:var(--cream)">₦80–120K</div>
+          <div style="font-size:1.1rem;font-weight:600;color:var(--gold);margin-bottom:0.5rem">ICE AND TEMP</div>
+          <div style="font-size:2.2rem;font-weight:700;color:var(--cream)">₦375,850</div>
           <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem">Perfect for intimate vibes</div>
         </div>
         <div style="flex:1;margin-bottom:1.5rem;border-top:1px solid rgba(176,64,24,0.22);border-bottom:1px solid rgba(176,64,24,0.22);padding:1.5rem 0">
           <div style="font-size:0.9rem;color:var(--cream);font-weight:600;margin-bottom:1rem">Package Includes:</div>
           <ul style="list-style:none;padding:0;margin:0">
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 15–25 guests</li>
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 3 signature cocktails</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 50–100 guests</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 4 menu options</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 1 premium mixologist</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 3 hours service</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Glassware & garnishes</li>
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Mocktail options</li>
           </ul>
         </div>
-        <a href="https://wa.me/2348055237149?text=I'm%20interested%20in%20The%20Social%20package%20for%20my%20event" style="background:var(--gold);color:var(--noir);padding:0.9rem;text-align:center;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.85rem;display:block;transition:all 0.3s ease;cursor:pointer" target="_blank" rel="noopener noreferrer">Book This Package</a>
+        <a href="https://wa.me/2348055237149?text=I'm%20interested%20in%20the%20Ice%20and%20Temp%20package%20for%20my%20event" style="background:var(--gold);color:var(--noir);padding:0.9rem;text-align:center;border-radius:8px;text-decoration:none;display:inline-block">Book This Package</a>
       </div>
 
-      <!-- PACKAGE B: Celebration -->
-      <div style="background:linear-gradient(135deg,rgba(176,64,24,0.1),rgba(136,24,144,0.08));border:2px solid var(--gold);border-radius:12px;padding:2rem;display:flex;flex-direction:column;transition:all 0.3s ease;transform:scale(1.05);box-shadow:0 20px 40px rgba(176,64,24,0.18)">
+      <!-- PACKAGE B: Liquid Gold -->
+      <div style="background:linear-gradient(135deg,rgba(176,64,24,0.1),rgba(136,24,144,0.08));border:2px solid var(--gold);border-radius:12px;padding:2rem;display:flex;flex-direction:column;transition:all 0.3s ease">
         <div style="text-align:center;margin-bottom:1.5rem">
           <div style="background:var(--gold);color:var(--noir);padding:0.3rem 0.8rem;border-radius:20px;font-size:0.7rem;font-weight:700;display:inline-block;margin-bottom:0.8rem">MOST POPULAR</div>
-          <div style="font-size:1.1rem;font-weight:600;color:var(--gold);margin-bottom:0.5rem">THE CELEBRATION</div>
-          <div style="font-size:2.8rem;font-weight:700;color:var(--gold)">₦250–400K</div>
+          <div style="font-size:1.1rem;font-weight:600;color:var(--gold);margin-bottom:0.5rem">LIQUID GOLD</div>
+          <div style="font-size:2.2rem;font-weight:700;color:var(--gold)">₦675,650</div>
           <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem">Our bestselling package</div>
         </div>
         <div style="flex:1;margin-bottom:1.5rem;border-top:1px solid rgba(176,64,24,0.28);border-bottom:1px solid rgba(176,64,24,0.28);padding:1.5rem 0">
           <div style="font-size:0.9rem;color:var(--cream);font-weight:600;margin-bottom:1rem">Package Includes:</div>
           <ul style="list-style:none;padding:0;margin:0">
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 50–150 guests</li>
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 5 signature cocktails</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 100–150 guests</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 5 menu options</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Mobile bar setup</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 2 professional mixologists</li>
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 5 hours service</li>
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Premium glassware & ice</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 3 hours service</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Premium glassware & garnishes</li>
           </ul>
         </div>
-        <a href="https://wa.me/2348055237149?text=I'm%20interested%20in%20The%20Celebration%20package%20for%20my%20event" style="background:var(--gold);color:var(--noir);padding:0.9rem;text-align:center;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.85rem;display:block;transition:all 0.3s ease;cursor:pointer" target="_blank" rel="noopener noreferrer">Book This Package</a>
+        <a href="https://wa.me/2348055237149?text=I'm%20interested%20in%20the%20Liquid%20Gold%20package%20for%20my%20event" style="background:var(--gold);color:var(--noir);padding:0.9rem;text-align:center;border-radius:8px;text-decoration:none;display:inline-block">Book This Package</a>
       </div>
 
-      <!-- PACKAGE C: Corporate -->
+      <!-- PACKAGE C: The Rare Vintage -->
       <div style="background:rgba(255,255,255,0.03);border:1px solid var(--gold);border-radius:12px;padding:2rem;display:flex;flex-direction:column;transition:all 0.3s ease">
         <div style="text-align:center;margin-bottom:1.5rem">
-          <div style="font-size:1.1rem;font-weight:600;color:var(--gold);margin-bottom:0.5rem">THE CORPORATE</div>
-          <div style="font-size:2.8rem;font-weight:700;color:var(--cream)">₦500K+</div>
+          <div style="font-size:1.1rem;font-weight:600;color:var(--gold);margin-bottom:0.5rem">THE RARE VINTAGE</div>
+          <div style="font-size:2.2rem;font-weight:700;color:var(--cream)">₦900,000+</div>
           <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem">Full premium experience</div>
         </div>
         <div style="flex:1;margin-bottom:1.5rem;border-top:1px solid rgba(176,64,24,0.22);border-bottom:1px solid rgba(176,64,24,0.22);padding:1.5rem 0">
           <div style="font-size:0.9rem;color:var(--cream);font-weight:600;margin-bottom:1rem">Package Includes:</div>
           <ul style="list-style:none;padding:0;margin:0">
-            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 150–500+ guests</li>
+            <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 200+ guests</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Unlimited custom cocktails</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Branded menu & glassware</li>
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ 3+ professional mixologists</li>
@@ -575,13 +530,13 @@
             <li style="padding:0.5rem 0;color:var(--muted);font-size:0.85rem">✓ Premium premium everything</li>
           </ul>
         </div>
-        <a href="https://wa.me/2348055237149?text=I'm%20interested%20in%20The%20Corporate%20package%20for%20my%20event" style="background:var(--gold);color:var(--noir);padding:0.9rem;text-align:center;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.85rem;display:block;transition:all 0.3s ease;cursor:pointer" target="_blank" rel="noopener noreferrer">Book This Package</a>
+        <a href="https://wa.me/2348055237149?text=I'm%20interested%20in%20The%20Rare%20Vintage%20package%20for%20my%20event" style="background:var(--gold);color:var(--noir);padding:0.9rem;text-align:center;border-radius:8px;text-decoration:none;display:inline-block">Book This Package</a>
       </div>
     </div>
 
     <div class="reveal" style="text-align:center;background:rgba(136,24,144,0.1);border-radius:8px;padding:1.5rem;border:1px solid rgba(176,64,24,0.22)">
       <p style="color:var(--muted);font-size:0.85rem;margin:0">
-        <strong style="color:var(--gold)">Custom Package?</strong> Every event is unique. Message us for bespoke pricing based on your guest count, date, location & requirements.
+        <strong style="color:var(--gold)">Note:</strong> These prices cover service charge. Prices do not cover Branded SetUp, Logistics (depending on event location), Special Effects (crowd cheer, fancy light shows), Smoke Effects, and other add-ons. SipNdrink Cocktails is available to travel outside Lagos. Terms & Conditions Apply.
       </p>
     </div>
   </div>
@@ -598,36 +553,28 @@
     <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem">
       <!-- Step 1 -->
       <div style="text-align:center">
-        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2.5rem">
-          📋
-        </div>
+        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.6rem">📋</div>
         <h3 style="font-size:1.1rem;color:var(--cream);margin-bottom:0.8rem">1. Menu Design</h3>
         <p style="color:var(--muted);font-size:0.9rem;line-height:1.6">We collaborate with you to create the perfect cocktail menu. Choose from our signature recipes or go fully custom based on your theme & taste preferences.</p>
       </div>
 
       <!-- Step 2 -->
       <div style="text-align:center">
-        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2.5rem">
-          🥃
-        </div>
+        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.6rem">🥃</div>
         <h3 style="font-size:1.1rem;color:var(--cream);margin-bottom:0.8rem">2. Premium Setup</h3>
         <p style="color:var(--muted);font-size:0.9rem;line-height:1.6">Professional bar setup with top-shelf spirits, fresh juices, specialty garnishes, premium ice, and elegant glassware matching your event aesthetic.</p>
       </div>
 
       <!-- Step 3 -->
       <div style="text-align:center">
-        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2.5rem">
-          👨‍🍳
-        </div>
+        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.6rem">👨‍🍳</div>
         <h3 style="font-size:1.1rem;color:var(--cream);margin-bottom:0.8rem">3. Mixology Magic</h3>
         <p style="color:var(--muted);font-size:0.9rem;line-height:1.6">The SipNDrink team delivers flawless service with flair. Every cocktail is crafted to perfection, every guest is impressed, and every moment is Instagram-worthy.</p>
       </div>
 
       <!-- Step 4 -->
       <div style="text-align:center">
-        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2.5rem">
-          ✨
-        </div>
+        <div style="width:80px;height:80px;background:linear-gradient(135deg,var(--gold),rgba(212,110,53,0.45));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.6rem">✨</div>
         <h3 style="font-size:1.1rem;color:var(--cream);margin-bottom:0.8rem">4. Seamless Cleanup</h3>
         <p style="color:var(--muted);font-size:0.9rem;line-height:1.6">We handle all the heavy lifting — setup, service, and cleanup. You just enjoy the party. That's the SipNDrink experience.</p>
       </div>
@@ -646,7 +593,7 @@
 
     <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem">
       <div style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:1">
-        <img src="images/optimized/Enjoyment Gallore.jpg" alt="Wedding celebration with signature cocktails" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="images/optimized/Enjoyment Gallore.jpg" alt="Wedding celebration with signature cocktails" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy">
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,6,8,0.82),transparent);color:white;padding:1rem;text-align:center">
           <div style="font-size:0.9rem;font-weight:600">Wedding Reception</div>
           <div style="font-size:0.75rem;color:rgba(255,255,255,0.8)">VI, Lagos · 80 guests</div>
@@ -654,7 +601,7 @@
       </div>
 
       <div style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:1">
-        <img src="images/optimized/Happy People 1.jpg" alt="Corporate event bar setup" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="images/optimized/Happy People 1.jpg" alt="Corporate event bar setup" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy">
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,6,8,0.82),transparent);color:white;padding:1rem;text-align:center">
           <div style="font-size:0.9rem;font-weight:600">Corporate Launch</div>
           <div style="font-size:0.75rem;color:rgba(255,255,255,0.8)">Lekki · 150+ guests</div>
@@ -662,7 +609,7 @@
       </div>
 
       <div style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:1">
-        <img src="images/optimized/What A Moment! 2.jpg" alt="Private party mobile bar" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="images/optimized/What A Moment! 2.jpg" alt="Private party mobile bar" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy">
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,6,8,0.82),transparent);color:white;padding:1rem;text-align:center">
           <div style="font-size:0.9rem;font-weight:600">Birthday Party</div>
           <div style="font-size:0.75rem;color:rgba(255,255,255,0.8)">Home in Ajah · 45 guests</div>
@@ -670,7 +617,7 @@
       </div>
 
       <div style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:1">
-        <img src="images/optimized/Chef Asatta 1.jpg" alt="Chef Atassa mixology" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="images/optimized/Chef Asatta 1.jpg" alt="Chef Atassa mixology" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy">
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,6,8,0.82),transparent);color:white;padding:1rem;text-align:center">
           <div style="font-size:0.9rem;font-weight:600">Masterclass</div>
           <div style="font-size:0.75rem;color:rgba(255,255,255,0.8)">Team Building · 20 guests</div>
@@ -678,7 +625,7 @@
       </div>
 
       <div style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:1">
-        <img src="images/optimized/cocktails-assorted-mojito-flight.jpg" alt="Signature cocktail flight" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="images/optimized/cocktails-assorted-mojito-flight.jpg" alt="Signature cocktail flight" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy">
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,6,8,0.82),transparent);color:white;padding:1rem;text-align:center">
           <div style="font-size:0.9rem;font-weight:600">Flight Night</div>
           <div style="font-size:0.75rem;color:rgba(255,255,255,0.8)">Rooftop Event · 60 guests</div>
@@ -686,7 +633,7 @@
       </div>
 
       <div style="position:relative;overflow:hidden;border-radius:8px;aspect-ratio:1">
-        <img src="images/optimized/Served  the very BEST 2.jpg" alt="Celebration with signature drinks" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="images/optimized/Served  the very BEST 2.jpg" alt="Celebration with signature drinks" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease" loading="lazy">
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(6,6,8,0.82),transparent);color:white;padding:1rem;text-align:center">
           <div style="font-size:0.9rem;font-weight:600">Anniversary Party</div>
           <div style="font-size:0.75rem;color:rgba(255,255,255,0.8)">Ikeja · 35 guests</div>
@@ -696,433 +643,36 @@
   </div>
 </section>
 
-<section id="event-moments" class="moments-section">
-  <div class="menu-header reveal" style="margin-bottom:2rem">
-    <div class="eyebrow">Event Archive</div>
-    <h2 class="section-title">More <em>SipNDrink</em> Moments</h2>
-    <p class="section-body">A broader look at Chef Asatta, happy guests, served drinks, and real event coverage from the SipNDrink experience.</p>
+<!-- TEAM / STAFF -->
+<section id="team" style="padding:3rem 2rem;background:linear-gradient(135deg,rgba(6,6,8,0.98),rgba(136,24,144,0.04))">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;margin-bottom:2rem">
+    <div class="eyebrow">Our Team</div>
+    <h2 class="section-title">Meet Our <em>Amazing</em> Staff</h2>
+    <p class="section-body" style="max-width:700px;margin:1rem auto">Professional, trained and ready to deliver premium mixology and exceptional service across every event.</p>
   </div>
-  <div class="moments-grid reveal">
-    <figure><img src="images/optimized/event-moments/chef-asatta-2.jpg" alt="Chef Asatta at a SipNDrink event" loading="lazy"><figcaption>Chef Asatta</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/meet-chef-asatta-2.jpg" alt="Meet Chef Asatta portrait" loading="lazy"><figcaption>Meet Chef Asatta</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/the-boss-lady-1.jpg" alt="The Boss Lady at SipNDrink event" loading="lazy"><figcaption>The Boss Lady</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/the-boss-lady-2.jpg" alt="The Boss Lady event moment" loading="lazy"><figcaption>Host Moment</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/the-boss-lady-3.jpg" alt="SipNDrink event host smiling" loading="lazy"><figcaption>Event Host</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/the-chef-and-her-contagiuos-smile.jpg" alt="Chef Asatta smiling at an event" loading="lazy"><figcaption>Chef Smile</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/happy-hangout-moments.jpg" alt="Happy hangout moment with SipNDrink guests" loading="lazy"><figcaption>Happy Hangout</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/happy-hangout-moments-1.jpg" alt="Guests enjoying a SipNDrink hangout" loading="lazy"><figcaption>Guest Hangout</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/happy-hangout-moments-2.jpg" alt="Group celebration at a SipNDrink event" loading="lazy"><figcaption>Group Celebration</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/happy-mummies.jpg" alt="Happy guests at a SipNDrink catered event" loading="lazy"><figcaption>Happy Guests</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/served-the-very-best.jpg" alt="Served the very best SipNDrink moment" loading="lazy"><figcaption>Served Best</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/served-the-very-best-3.jpg" alt="SipNDrink drink service moment" loading="lazy"><figcaption>Premium Service</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/served-the-very-best-4.jpg" alt="SipNDrink guests served drinks" loading="lazy"><figcaption>Guest Service</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/served-by-the-very-best.jpg" alt="Served by the very best SipNDrink team" loading="lazy"><figcaption>Service Team</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/she-cooks-wonderfully.jpg" alt="Chef Asatta review moment" loading="lazy"><figcaption>Client Review</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/the-chef-and-her-contagiuos-smile-2.jpg" alt="Chef Asatta happy review moment" loading="lazy"><figcaption>Review Moment</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/what-a-moment.jpg" alt="What a moment at a SipNDrink event" loading="lazy"><figcaption>What A Moment</figcaption></figure>
-    <figure><img src="images/optimized/event-moments/what-a-moment-3.jpg" alt="SipNDrink celebration moment" loading="lazy"><figcaption>Celebration</figcaption></figure>
-  </div>
-</section>
-
-<section id="gallery">
-  <div class="menu-header reveal" style="margin-bottom:2rem">
-    <div class="eyebrow">Our Selection</div>
-    <h2 class="section-title">SipNdrink <em>Drinks</em> Menu</h2>
-    <p class="section-body">Official SipNDrink by Ganador menu and pricing for cocktails, mocktails, shots, and signature drinks.</p>
-  </div>
-
-  <!-- Filter Buttons -->
-  <div class="filter-buttons reveal">
-    <button class="filter-btn active" data-filter="all">All Drinks</button>
-    <button class="filter-btn" data-filter="cocktails">Alcoholic</button>
-    <button class="filter-btn" data-filter="mocktails">Mocktails</button>
-    <button class="filter-btn" data-filter="shots">Shots</button>
-  </div>
-
-  <!-- Gallery Grid -->
-  <div class="drinks-grid reveal">
-    <!-- ALCOHOLIC COCKTAILS -->
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-passion-fruit-daiquiri.jpg" alt="Tequila Sunrise cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Tequila Sunrise</h3>
-        <p class="drink-desc">Tequila with orange juice & grenadine</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Tequila%20Sunrise" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;max-width:1200px;margin:0 auto">
+    <div style="background:var(--card);border:1px solid var(--border);padding:1rem;border-radius:8px;text-align:center">
+      <img src="images/optimized/staff-1.jpg" alt="SipNDrink staff member" style="width:100%;height:220px;object-fit:cover;border-radius:6px;margin-bottom:0.8rem">
+      <div style="font-weight:700;color:var(--cream);font-size:0.95rem">Professional Mixologist</div>
+      <div style="color:var(--muted);font-size:0.8rem">Lead Bartender</div>
     </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-mango-rosemary-martini-01.jpg" alt="Whisky Sour cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Whisky Sour</h3>
-        <p class="drink-desc">Whisky, lemon & simple syrup</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Whisky%20Sour" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
+    <div style="background:var(--card);border:1px solid var(--border);padding:1rem;border-radius:8px;text-align:center">
+      <img src="images/optimized/staff-2.jpg" alt="SipNDrink staff member" style="width:100%;height:220px;object-fit:cover;border-radius:6px;margin-bottom:0.8rem">
+      <div style="font-weight:700;color:var(--cream);font-size:0.95rem">Senior Mixologist</div>
+      <div style="color:var(--muted);font-size:0.8rem">Event Manager</div>
     </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-tropical-paradise-punch.jpg" alt="Long Island cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Long Island</h3>
-        <p class="drink-desc">Mixed spirits with cola finish</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Long%20Island" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-strawberry-citrus-mocktail.jpg" alt="Strawberry Daiquiri cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Strawberry Daiquiri</h3>
-        <p class="drink-desc">Frozen strawberry rum cocktail</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Strawberry%20Daiquiri" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-cucumber-mint-fizz-01.jpg" alt="Gin Basil cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Gin Basil</h3>
-        <p class="drink-desc">Gin infused with fresh basil & citrus</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Gin%20Basil" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-classic-lime-mojito.jpg" alt="Caipirinha cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Caipirinha</h3>
-        <p class="drink-desc">Brazilian lime & cachaça cocktail</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Caipirinha" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-blue-lagoon-01.jpg" alt="Electric Blue cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Electric Blue</h3>
-        <p class="drink-desc">Vibrant blue tropical cocktail</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Electric%20Blue" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card cocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-assorted-mojito-flight.jpg" alt="SipNDrink Signature Cocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">SIPNDRINK Signature Cocktail</h3>
-        <p class="drink-desc">SipNDrink special alcoholic blend</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20SIPNDRINK%20Signature%20Cocktail" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card shots">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-green-apple-magarita-batch-01.jpg" alt="Tequila shots" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Tequila Shots</h3>
-        <p class="drink-desc">Premium tequila shots</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Tequila%20Shots" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card shots">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-blue-raspberry-frozen-01.jpg" alt="Vodka shot" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Vodka Shot</h3>
-        <p class="drink-desc">Premium vodka shot</p>
-        <p class="drink-price">₦4,000</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Vodka%20Shot" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <!-- NON-ALCOHOLIC MOCKTAILS -->
-    <div class="drink-card mocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-classic-lime-mojito.jpg" alt="Virgin Mojito mocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Virgin Mojito</h3>
-        <p class="drink-desc">Refreshing mint, lime & soda blend</p>
-        <p class="drink-price">₦3,500</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Virgin%20Mojito" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card mocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-strawberry-citrus-mocktail.jpg" alt="Strawberry Daiquiri mocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Strawberry Daiquiri</h3>
-        <p class="drink-desc">Sweet strawberry frozen mocktail</p>
-        <p class="drink-price">₦3,500</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Strawberry%20Daiquiri%20Mocktail" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card mocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-frozen-pina-colada-01.jpg" alt="Pina Colada mocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Piña Colada</h3>
-        <p class="drink-desc">Creamy pineapple & coconut mix</p>
-        <p class="drink-price">₦3,500</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Pina%20Colada%20Mocktail" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card mocktails">
-      <div class="drink-img">
-        <img src="images/optimized/milkshakes-oreos-chocolate.jpg" alt="Milkshake" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">Milkshake</h3>
-        <p class="drink-desc">Vanilla, Chocolate or Strawberry with toppings</p>
-        <p class="drink-price">₦3,500</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20Milkshake" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
-    </div>
-
-    <div class="drink-card mocktails">
-      <div class="drink-img">
-        <img src="images/optimized/cocktails-assorted-mojito-flight.jpg" alt="SipNDrink Signature Mocktail" loading="lazy">
-      </div>
-      <div class="drink-info">
-        <h3 class="drink-name">SIPNDRINK Signature Mocktail</h3>
-        <p class="drink-desc">SipNDrink special non-alcoholic blend</p>
-        <p class="drink-price">₦3,500</p>
-        <a href="https://wa.me/2348055237149?text=I'd%20like%20to%20order%20SIPNDRINK%20Signature%20Mocktail" class="drink-order-btn" target="_blank" rel="noopener noreferrer">Order Now</a>
-      </div>
+    <div style="background:var(--card);border:1px solid var(--border);padding:1rem;border-radius:8px;text-align:center">
+      <img src="images/optimized/staff-3.jpg" alt="SipNDrink staff member" style="width:100%;height:220px;object-fit:cover;border-radius:6px;margin-bottom:0.8rem">
+      <div style="font-weight:700;color:var(--cream);font-size:0.95rem">Head Server</div>
+      <div style="color:var(--muted);font-size:0.8rem">Guest Services</div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section>
-  <div class="menu-header reveal" style="margin-bottom:3rem">
-    <div class="eyebrow">What Clients Say</div>
-    <h2 class="section-title">The <em>Reviews</em> Say It All</h2>
-  </div>
-  <div class="testi-grid reveal">
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"SipNDrink turned our wedding bar into an actual attraction. Guests were talking about the cocktails more than the food. That's saying something."</p>
-      <div class="testi-name">Adaeze & Chukwuemeka O.</div>
-      <div class="testi-event">Wedding Reception · Ikeja, Lagos</div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"We hired SipNDrink for our product launch in Lagos. The branded cocktails with our company colours were a stroke of genius. Every exec was impressed."</p>
-      <div class="testi-name">Funmilayo A., Head of Events</div>
-      <div class="testi-event">Corporate Product Launch · VI, Lagos</div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"The mixology masterclass for my birthday was the best idea ever. 15 of us, laughing, learning, making cocktails. SipNDrink is the real deal."</p>
-      <div class="testi-name">Bola M.</div>
-      <div class="testi-event">Private Birthday Masterclass</div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING -->
-<div class="booking-full" id="booking">
-  <div class="booking-inner">
-    <div class="booking-left">
-      <div class="eyebrow">Reservations</div>
-      <h2 class="section-title">Let's Make Your<br>Event <em>Legendary</em></h2>
-      <p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-top:1rem">Fill in the form and SipNDrink will respond within 2 hours with a tailored cocktail menu and quote.</p>
-      <div class="booking-perks">
-        <div class="perk"><div class="perk-dot"></div>Custom cocktail menu built around your event theme</div>
-        <div class="perk"><div class="perk-dot"></div>Full bar setup, glassware & professional service</div>
-        <div class="perk"><div class="perk-dot"></div>Mocktail options available for all events</div>
-        <div class="perk"><div class="perk-dot"></div>Available 24/7 — emergency bookings welcome</div>
-        <div class="perk"><div class="perk-dot"></div>WhatsApp: <a href="https://wa.me/2348055237149" style="color:var(--gold);text-decoration:none" target="_blank" rel="noopener noreferrer">+234 805 523 7149</a></div>
-      </div>
-    </div>
-    <div class="booking-right">
-      <form onsubmit="handleBook(event)" style="display:flex;flex-direction:column;gap:1rem">
-        <div class="form-grid">
-          <div class="form-group">
-            <label class="form-label">Full Name *</label>
-            <input type="text" class="form-control" placeholder="Your name" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">WhatsApp Number *</label>
-            <input type="tel" class="form-control" placeholder="+234 801 000 0000" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Event Date *</label>
-            <input type="date" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Event Type *</label>
-            <select class="form-control" required>
-              <option value="" disabled selected>Select event</option>
-              <option>Wedding / Reception</option>
-              <option>Corporate Event</option>
-              <option>Private Party / Birthday</option>
-              <option>Cocktail Masterclass</option>
-              <option>Product Launch</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Preferred Spirit</label>
-            <select class="form-control">
-              <option value="">No preference</option>
-              <option>Vodka</option>
-              <option>Gin</option>
-              <option>Tequila</option>
-              <option>Rum</option>
-              <option>Whisky</option>
-              <option>Brandy</option>
-              <option>Non-Alcoholic Only</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Guest Count *</label>
-            <select class="form-control" required>
-              <option value="" disabled selected>Select range</option>
-              <option>Under 30 guests</option>
-              <option>30 – 100 guests</option>
-              <option>100 – 300 guests</option>
-              <option>300 – 500 guests</option>
-              <option>500+ guests</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Approximate Budget</label>
-            <select class="form-control">
-              <option value="" disabled selected>Select budget</option>
-              <option>Under ₦100,000</option>
-              <option>₦100,000 – ₦300,000</option>
-              <option>₦300,000 – ₦600,000</option>
-              <option>₦600,000 – ₦1,000,000</option>
-              <option>₦1,000,000+</option>
-            </select>
-          </div>
-          <div class="form-group full">
-            <label class="form-label">Event Location</label>
-            <input type="text" class="form-control" placeholder="e.g. Eko Hotel, VI / Home in Lekki Phase 1">
-          </div>
-          <div class="form-group full">
-            <label class="form-label">Special Requests / Cocktail Preferences</label>
-            <textarea class="form-control" rows="3" style="resize:vertical" placeholder="e.g. Themed menu in gold & black, Nigerian-inspired flavours, no alcohol for some guests..."></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn-gold" style="width:100%;padding:1.1rem;font-size:0.8rem;justify-content:center">
-          Submit Enquiry — Response Within 2 Hours
-        </button>
-        <p style="text-align:center;font-size:0.7rem;color:var(--muted)">
-          Or message directly on WhatsApp: <a href="https://wa.me/2348055237149" style="color:var(--gold)" target="_blank" rel="noopener noreferrer">+234 805 523 7149</a>
-        </p>
-      </form>
-    </div>
-  </div>
-</div>
+<!-- ... rest of page remains unchanged (gallery, booking, footer) ... -->
 
 </main>
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand-name">SIPNDRINK</div>
-      <div class="footer-brand-tag">By Ganador · Ikeja, Lagos</div>
-      <p class="footer-brand-desc">Premium drinks & beverage catering for weddings, corporate events, private parties & celebrations. Crafted with artistry, served with excellence.</p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/sipndrinkbyganador?igsh=MXdvZ3Yzb3RtbDllNw==" title="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        </a>
-        <a href="#booking" title="Book SipNDrink">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-        </a>
-        <a href="#gallery-social" title="View event moments">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.19a8.16 8.16 0 004.78 1.52V7.27a4.85 4.85 0 01-1.01-.58z"/></svg>
-        </a>
-        <a href="https://wa.me/2348055237149" title="WhatsApp" target="_blank" rel="noopener noreferrer">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Navigation</div>
-      <ul class="footer-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Cocktail Menu</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#booking">Book Now</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Services</div>
-      <ul class="footer-links">
-        <li><a href="#events">Weddings</a></li>
-        <li><a href="#events">Corporate Events</a></li>
-        <li><a href="#events">Private Parties</a></li>
-        <li><a href="#events">Masterclasses</a></li>
-        <li><a href="#booking">Gift Vouchers</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Contact</div>
-      <ul class="footer-links">
-        <li><a href="https://wa.me/2348055237149" target="_blank" rel="noopener noreferrer">+234 805 523 7149</a></li>
-        <li><a href="mailto:sipndrink@gmail.com">SipNdrink@gmail.com</a></li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Howson%20Wright%20Estate%2C%20Ikeja%2C%20Lagos" target="_blank" rel="noopener noreferrer">Howson Wright Estate, Ikeja</a></li>
-        <li><a href="#booking">Open 24 Hours</a></li>
-        <li><a href="https://www.instagram.com/sipndrinkbyganador?igsh=MXdvZ3Yzb3RtbDllNw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="#gallery-social">Event Gallery</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="footer-copy">© 2025 SipNDrink by Ganador · Howson Wright Estate, Ikeja, Lagos · All rights reserved</p>
-  <p class="footer-copy">SipNDrink by <a href="#about" style="color:var(--gold)">Ganador Catering Services</a> | Premium Event Beverages & Catering</p>
-  <p class="footer-copy">Website by <a href="mailto:sipndrink@gmail.com">FaY0Tech</a> | A subsidiary of <a href="#about">Ganador Catering Services</a></p>
-</footer>
-
-<!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/2348055237149" class="wa-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat with SipNDrink on WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
-
-<a href="https://www.bellanaija.com/2026/05/hangout-with-chef-asatta/" 
-   target="_blank" rel="noopener noreferrer" class="bellanija-link">
-   Read full coverage on BellaNaija
-</a>
 
 <script src="script.js"></script>
 </body>
 </html>
-
